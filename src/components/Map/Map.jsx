@@ -9,7 +9,7 @@ import useStyles from './styles'
 const Map = () => {
 
   const { isLoaded} = useLoadScript({
-    googleMapsApiKey: 'AIzaSyA93PU7-39O4Z2QU3DOjFNLR1AbkG2NmUg'
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY
   })
   const classes = useStyles()
   const isMobile = useMediaQuery('(min-width:600px)')
